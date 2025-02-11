@@ -116,7 +116,7 @@ function App() {
 
       {/* Nova Box de Texto */}
       <div className="text-box">
-        <h3>Já que está aqui, escolha seus Pokémons</h3>
+        <h1>Já que está aqui, escolha seus Pokémons</h1>
       </div>
 
       {/* Nova Box de Subtítulo e Botão de Escolha */}
