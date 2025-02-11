@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+  background-color: black;
+}
+
+/* Vídeo fixo no fundo */
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.background-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Camada de fundo semi-transparente */
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6); /* Fundo escuro semi-transparente */
+  z-index: -1;
+}
+
+/* Navbar fixa com fundo sólido */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(0, 0, 0, 0.85); /* Agora com um fundo mais escuro e sólido */
+  z-index: 10;
+  top: 0;
+}
+
+.logo {
+  height: 40px;
+}
+
+.subscribe-button {
+  background-color: #007aff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 50px;
+}
+
+.subscribe-button:hover {
+  background-color: #005bb5;
+}
+
+/* Seção Hero com fundo sólido mais escuro */
+.hero {
+  height: 100vh; /* Garante que o hero ocupe 100% da altura da tela */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  color: white;
+  padding-left: 50px;
+  padding-right: 50px; /* Adicionando padding nas laterais */
+  position: relative;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.7); /* Fundo sólido escuro no Hero */
+  margin-top: 70px; /* Adiciona o valor da altura da navbar para garantir que o hero comece logo abaixo dela */
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #007aff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #005bb5;
+}
+
+/* Seção de texto (Lorem Ipsum) */
+.lorem-section {
+  padding: 50px;
+  color: white;
+  opacity: 0;
+  transition: opacity 2s ease-out; /* Atraso maior para o fade-in */
+  font-size: 60px; /* Tamanho maior das letras */
+  font-weight: bold;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7); /* Fundo mais escuro para o contraste */
+  padding: 60px;
+  border-radius: 10px;
+}
+
+.lorem-section.visible {
+  opacity: 1;
+}
+
+/* Rodapé */
+.footer {
+  width: 100%;
+  padding: 80px 0; /* Mais altura para o rodapé */
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  text-align: center;
+  position: relative;
+  margin-top: auto;
+  z-index: 2;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 20px;
+}
