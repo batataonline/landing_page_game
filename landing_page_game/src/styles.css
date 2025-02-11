@@ -5,6 +5,103 @@ body {
   background-color: black;
 }
 
+/* Box de subtítulo */
+.subtitle-box {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.subtitle-box h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Botão de escolha */
+.choice-button {
+  background-color: #007aff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.choice-button:hover {
+  background-color: #005bb5;
+}
+
+/* Lista de opções */
+.choice-options {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.choice-options li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.choice-options li:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Container das imagens */
+.image-box-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px; /* Ajuste para reduzir a margem inferior */
+  flex-wrap: wrap; /* Permite que as boxes se ajustem em uma nova linha, se necessário */
+}
+
+/* Cada box de imagem */
+.image-box {
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Imagens dentro das boxes */
+.image-box {
+  width: 200px;
+  height: 250px; /* Aumenta um pouco a altura para acomodar o texto */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* Para empilhar a imagem e o título */
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.image-box img {
+  width: 100%;
+  height: 150px; /* Ajuste de altura para a imagem */
+  object-fit: cover;
+}
+
+.image-box-title {
+  margin-top: 10px; /* Espaçamento entre a imagem e o título */
+  font-size: 16px;
+  color: white; /* Cor do título */
+  text-align: center;
+}
 /* Vídeo fixo no fundo */
 .background-video {
   position: fixed;
@@ -141,4 +238,43 @@ body {
 .footer p {
   margin: 0;
   font-size: 20px;
+}
+
+.text-box {
+  width: 100%;
+  text-align: center; /* Centraliza o texto */
+  padding: 20px 0; /* Espaçamento acima e abaixo do título */
+  background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo translúcida */
+  border: 2px solid #00000000; /* Borda ao redor da caixa */
+  border-radius: 8px; /* Bordas arredondadas */
+}
+
+.text-box h2 {
+  font-size: 24px; /* Tamanho do texto */
+  color: white; /* Cor do texto */
+  margin: 0; /* Remove a margem padrão do h2 */
+}
+
+.pokemon-options ul {
+  list-style-type: none; /* Remove os marcadores da lista */
+  padding: 0;
+  margin: 0;
+}
+
+.pokemon-options li {
+  padding: 10px 20px; /* Espaçamento interno para tornar os itens maiores e mais clicáveis */
+  margin: 5px 0; /* Espaçamento entre as opções */
+  border: 2px solid #fff; /* Borda branca em cada item */
+  border-radius: 8px; /* Borda arredondada */
+  cursor: pointer; /* Mostra o cursor de mão ao passar sobre o item */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Adiciona um efeito suave de transição */
+}
+
+.pokemon-options li:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Cor de fundo quando o item é sobrevoado */
+  transform: scale(1.05); /* Leve aumento de tamanho para efeito visual */
+}
+
+.pokemon-options li:active {
+  background-color: rgba(255, 255, 255, 0.4); /* Cor de fundo quando clicado */
 }
